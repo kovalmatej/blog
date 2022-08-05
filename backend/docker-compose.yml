@@ -1,0 +1,10 @@
+version: "3"
+
+services: 
+  app:
+    container_name: backend
+    build: .
+    ports:
+      - "5000:5000"
+    enviroment:
+      - PORT=5000
